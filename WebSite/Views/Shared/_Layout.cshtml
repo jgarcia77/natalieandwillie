@@ -7,7 +7,17 @@
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link href="~/css/style.css" rel="stylesheet" />
+        <link href="~/css/responsive.css" rel="stylesheet" />
+        <link href="~/css/lightbox.css" rel="stylesheet" />
+        <link href="~/inc/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link href="~/inc/owl-carousel/owl.carousel.css" rel="stylesheet" />
+        <link href="~/inc/owl-carousel/owl.theme.css" rel="stylesheet" />
         <link rel="stylesheet" href="~/css/site.css" />
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     </environment>
     <environment names="Staging,Production">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
@@ -18,38 +28,140 @@
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">WebSite</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2016 - WebSite</p>
-        </footer>
+
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
     </div>
 
+    <!-- BEGIN HEADER -->
+    <header>
+
+        <!-- Top Navigation -->
+        <nav data-scroll-reveal>
+            <ul class="main-nav">
+                <li><a href="#our-story">Our Story</a></li>
+                <li class="sep"></li>
+                <li><a href="#ceremony">Ceremony</a></li>
+                <li class="sep"></li>
+                <li><a href="#restaurant">Restaurant</a></li>
+                <li class="sep"></li>
+                <li><a href="#party">Party</a></li>
+                <li class="sep"></li>
+                <li><a href="#accommodation">Accommodation</a></li>
+                <li class="sep"></li>
+                <li><a href="#gifts">Gifts</a></li>
+                <li class="sep"></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li class="sep"></li>
+                <li>
+                    <a href="#" class="stay">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="index.php">Home Page</a></li>
+                        <li><a href="uielements.html">UI Elements</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="guestbook.html">Guest Book</a></li>
+                        <li><a href="404.html">Error 404</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="mobile-nav">
+                <ul class="mobile-nav-menu">
+                    <li><a href="#our-story">Our Story</a></li>
+                    <li><a href="#ceremony">Ceremony</a></li>
+                    <li><a href="#restaurant">Restaurant</a></li>
+                    <li><a href="#party">Party</a></li>
+                    <li><a href="#accommodation">Accommodation</a></li>
+                    <li><a href="#gifts">Gifts</a></li>
+                    <li><a href="#rsvp">RSVP</a></li>
+                    <li>
+                        <div>Pages <i class="fa fa-chevron-right"></i></div>
+                        <ul>
+                            <li><a href="index.php">Home Page</a></li>
+                            <li><a href="uielements.html">UI Elements</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="guestbook.html">Guest Book</a></li>
+                            <li><a href="404.html">Error 404</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="show-menu"><i class="fa fa-bars"></i></span>
+            </div>
+        </nav>
+
+        <!-- Names -->
+        <div class="names">Kevin <span>&</span> Maria</div>
+
+        <!-- Wedding Date -->
+        <div class="wedate">Saturday <i>-</i> <strong>July 16</strong> <i>-</i> 2016</div>
+
+        <!-- Header Images -->
+        <div class="main-images center-content">
+
+            <div class="couple">
+                <img src="images/main-03.jpg" alt="" class="round-img round-img-lgb">
+            </div>
+
+            <div class="images">
+                <div class="image-01">
+                    <img src="images/main-01.jpg" alt="" class="round-img">
+                </div>
+                <div class="image-02">
+                    <img src="images/main-02.jpg" alt="" class="round-img">
+                </div>
+                <div class="image-04">
+                    <img src="images/main-04.jpg" alt="" class="round-img">
+                </div>
+                <div class="image-05">
+                    <img src="images/main-05.jpg" alt="" class="round-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown countdown-white" data-countdown="2016/7/16"></div>
+        <!-- Countdown Mobile -->
+        <div class="countdown-mobile countdown-white" data-countdown-mobile="2016/7/16"></div>
+    </header>
+    <!-- END HEADER -->
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <!-- BEGIN FOOTER -->
+    <footer class="clearfix">
+        <div class="m-12">
+            <p>Information line • 1-800-9639288, E-mail • info@wedding.tmp</p>
+
+            <div class="m-12 soc">
+                <a href="#"><i class="fa fa-twitter fa-mid"></i></a>
+                <a href="#"><i class="fa fa-facebook fa-mid"></i></a>
+                <a href="#"><i class="fa fa-google-plus fa-mid"></i></a>
+                <a href="#"><i class="fa fa-flickr fa-mid"></i></a>
+                <a href="#"><i class="fa fa-foursquare fa-mid"></i></a>
+                <a href="#"><i class="fa fa-youtube-play fa-mid"></i></a>
+                <a href="#"><i class="fa fa-vimeo-square fa-mid"></i></a>
+                <a href="#"><i class="fa fa-dribbble fa-mid"></i></a>
+            </div>
+
+            <span>All Rights Reserved © <?php echo date("Y") ?> | Kevin & Maria Wedding</span>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
     <environment names="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/jquery-1.11.3.js"></script>
+        @*<script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
+        <script src="~/js/countdown.js"></script>
+        <script src="~/js/scrollreveal.min.js"></script>
+        <script src="~/js/lightbox.js"></script>
+        <script src="~/inc/owl-carousel/owl.carousel.js"></script>
+        <script src="~/js/custom.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     </environment>
     <environment names="Staging,Production">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
