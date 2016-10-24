@@ -84,9 +84,9 @@ $(document).ready(function($) {
 
     // Google Map
     function initialize() {
-        var myLatlng = new google.maps.LatLng(40.711376, -74.010368);
+        var myLatlng = new google.maps.LatLng(41.821311, -87.972369);
         var mapOptions = {
-        zoom: 18,
+        zoom: 11,
         scrollwheel: false,
         draggable: false,
         center: myLatlng
@@ -171,18 +171,18 @@ $(document).ready(function($) {
     sr.reveal('#comments');
     sr.reveal('#ceremony h2');
     sr.reveal('#ceremony p');
+    sr.reveal('#ceremony img');
     sr.reveal('#ceremony .ceremony-images');
     sr.reveal('#map-canvas', {scale: 1});
-    sr.reveal('#restaurant .m-04');
-    sr.reveal('#party .m-04');
-    sr.reveal('#accommodation .m-03');
-    sr.reveal('#gifts h2');
-    sr.reveal('#gifts p');
-    sr.reveal('#gifts .copyright');
-    sr.reveal('#gifts .center-container');
-    //sr.reveal('#rsvp h2');
-    //sr.reveal('#rsvp p');
-    //sr.reveal('#rsvp-form');
+    sr.reveal('#wedding-party h2');
+    sr.reveal('#wedding-party p');
+    sr.reveal('#wedding-party img');
+    sr.reveal('#wedding-party .m-12');
+    sr.reveal('#accommodations .m-03');
+    sr.reveal('#accommodations img');
+    sr.reveal('#accommodations p');
+    sr.reveal('#wedding-photos h2');
+    sr.reveal('#wedding-photos p');
     sr.reveal('footer');
 
 });

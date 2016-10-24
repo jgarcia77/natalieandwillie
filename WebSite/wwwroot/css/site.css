@@ -1,38 +1,152 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿@font-face { font-family: BickhamScriptPro; src: url('../inc/fonts/BickhamScriptPro-Regular.otf'); }
+@font-face { font-family: EngraversGothic; src: url('../inc/fonts/EngraversGothicBT.ttf')}
+
+.names {
+    font-family: BickhamScriptPro !important;
+    font-size: 150px;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.wedate {
+    font-family: EngraversGothic !important;
+    font-size: 50px;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+.main-images {
+    margin-top: 0px !important;
 }
 
-/* Carousel */
-.carousel-caption p {
+#mainImage, #golfCourseImage, #hiltonLogo, #hiltonLogo2, #hiltonFrontView {
+    display: block;
+    margin: 0 auto;
+}
+
+h1.welcome_message {
+    font-family: EngraversGothic !important;
+    font-size: 40px;
+}
+
+h1 {
+    font-family: BickhamScriptPro !important;
+    text-transform: lowercase;
+    font-size: 100px;
+}
+
+h2 {
+    font-family: EngraversGothic !important;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: BickhamScriptPro !important;
+    font-size: 30px;
+    margin-top: -14px;
+}
+
+p {
+    font-family: EngraversGothic !important;
+}
+
+p.ceremony_message {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p.ceremony_address {
+    font-weight: bold;
     font-size: 20px;
-    line-height: 1.4;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"]
-{
-    width: 100%;
+#bridesmaid-images {
+    margin-left: 90px;
+}
+#groomsmen-images {
+    margin-left: 90px;
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-  /* Hide captions */
-  .carousel-caption {
-    display: none
+p.wedding-party-name {
+    font-size: 23px;
+}
+
+@media (max-width: 376px) {
+  .names {
+        font-size: 100px;
+    }
+
+  .wedate {
+        margin-top: -140px;
+    }
+  h1 {
+        font-size: 65px;
+    }
+  #golfCourseImage {
+      width: 90%;
   }
+
+  #bridesmaid-images {
+    margin-left: auto;
+    }
+
+  #groomsmen-images {
+    margin-left: auto;
+    }
+}
+
+@media (min-width: 667px) {
+  #bridesmaid-images {
+        margin-left: 55px;
+    }
+  #groomsmen-images {
+        margin-left: 55px;
+    }
+    h3 {
+      font-size: 26px;
+    }
+}
+
+@media (min-width: 768px) {
+  #bridesmaid-images {
+        margin-left: 60px;
+    }
+  #groomsmen-images {
+        margin-left: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+  #bridesmaid-images {
+        margin-left: 78px;
+    }
+  #groomsmen-images {
+        margin-left: 78px;
+    }
+}
+
+@media (min-width: 1025px) {
+  #bridesmaid-images {
+        margin-left: 90px;
+    }
+  #groomsmen-images {
+        margin-left: 90px;
+    }
+}
+
+body, .main-images {
+    background: none !important;
+}
+#ceremony img:hover {
+	border-radius: 0% !important;
+}
+
+#wedding-party .avatar {
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 0px 3px 8px 0px #cdcdcd;
+	margin: 0 auto 15px auto;
+}
+
+a {
+    color: navy;
+    text-decoration: underline;
 }

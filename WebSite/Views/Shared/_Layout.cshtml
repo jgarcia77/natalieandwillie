@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebSite</title>
+    <title>Natalie and Josue</title>
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -40,98 +40,65 @@
         <!-- Top Navigation -->
         <nav data-scroll-reveal>
             <ul class="main-nav">
-                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#welcome">Welcome</a></li>
                 <li class="sep"></li>
-                <li><a href="#ceremony">Ceremony</a></li>
+                <li><a href="#our-story">About Us</a></li>
                 <li class="sep"></li>
-                <li><a href="#restaurant">Restaurant</a></li>
+                <li><a href="#ceremony">The Wedding</a></li>
                 <li class="sep"></li>
-                <li><a href="#party">Party</a></li>
+                <li><a href="#wedding-party">Wedding Party</a></li>
                 <li class="sep"></li>
-                <li><a href="#accommodation">Accommodation</a></li>
+                <li><a href="#accommodation">Accommodations</a></li>
                 <li class="sep"></li>
-                <li><a href="#gifts">Gifts</a></li>
-                <li class="sep"></li>
-                <li><a href="#rsvp">RSVP</a></li>
-                <li class="sep"></li>
-                <li>
-                    <a href="#" class="stay">Pages</a>
-                    <ul class="dropdown">
-                        <li><a href="index.php">Home Page</a></li>
-                        <li><a href="uielements.html">UI Elements</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="guestbook.html">Guest Book</a></li>
-                        <li><a href="404.html">Error 404</a></li>
-                    </ul>
-                </li>
+                <li><a href="#wedding-photos">Wedding Photos</a></li>
             </ul>
 
             <div class="mobile-nav">
                 <ul class="mobile-nav-menu">
-                    <li><a href="#our-story">Our Story</a></li>
-                    <li><a href="#ceremony">Ceremony</a></li>
-                    <li><a href="#restaurant">Restaurant</a></li>
-                    <li><a href="#party">Party</a></li>
-                    <li><a href="#accommodation">Accommodation</a></li>
-                    <li><a href="#gifts">Gifts</a></li>
-                    <li><a href="#rsvp">RSVP</a></li>
-                    <li>
-                        <div>Pages <i class="fa fa-chevron-right"></i></div>
-                        <ul>
-                            <li><a href="index.php">Home Page</a></li>
-                            <li><a href="uielements.html">UI Elements</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="guestbook.html">Guest Book</a></li>
-                            <li><a href="404.html">Error 404</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#our-story">About Us</a></li>
+                    <li><a href="#ceremony">The Wedding</a></li>
+                    <li><a href="#wedding-party">Wedding Party</a></li>
+                    <li><a href="#accommodation">Accommodations</a></li>
+                    <li><a href="#wedding-photos">Wedding Photos</a></li>
                 </ul>
                 <span class="show-menu"><i class="fa fa-bars"></i></span>
             </div>
         </nav>
 
         <!-- Names -->
-        <div class="names">Kevin <span>&</span> Maria</div>
-
-        <!-- Wedding Date -->
-        <div class="wedate">Saturday <i>-</i> <strong>July 16</strong> <i>-</i> 2016</div>
-
+        <div id="welcome" class="names">natalie <span>&</span> josu&eacute</div>
+                
         <!-- Header Images -->
         <div class="main-images center-content">
-
             <div class="couple">
-                <img src="images/main-03.jpg" alt="" class="round-img round-img-lgb">
-            </div>
-
-            <div class="images">
-                <div class="image-01">
-                    <img src="images/main-01.jpg" alt="" class="round-img">
-                </div>
-                <div class="image-02">
-                    <img src="images/main-02.jpg" alt="" class="round-img">
-                </div>
-                <div class="image-04">
-                    <img src="images/main-04.jpg" alt="" class="round-img">
-                </div>
-                <div class="image-05">
-                    <img src="images/main-05.jpg" alt="" class="round-img">
-                </div>
+                <img id="mainImage" src="~/images/natalieandwillie1.jpg" alt="Natalie and Josue">
             </div>
         </div>
 
+        <!-- Wedding Date -->
+        <div class="wedate">06.09.17</div>
+
         <!-- Countdown -->
-        <div class="countdown countdown-white" data-countdown="2016/7/16"></div>
+        <div class="countdown countdown-white" data-countdown="2017/6/9 4:30 PM"></div>
         <!-- Countdown Mobile -->
-        <div class="countdown-mobile countdown-white" data-countdown-mobile="2016/7/16"></div>
+        <div class="countdown-mobile countdown-white" data-countdown-mobile="2017/6/9 4:30 PM"></div>
     </header>
     <!-- END HEADER -->
+
+    <section>
+        <h1 class="welcome_message">
+            Welcome to our wedding website!  <br />We can't wait to see you on our big day.
+        </h1>
+        <hr>
+    </section>
 
     <div class="container body-content">
         @RenderBody()
     </div>
 
     <!-- BEGIN FOOTER -->
-    <footer class="clearfix">
+    @*<footer class="clearfix">
         <div class="m-12">
             <p>Information line • 1-800-9639288, E-mail • info@wedding.tmp</p>
 
@@ -148,7 +115,7 @@
 
             <span>All Rights Reserved © <?php echo date("Y") ?> | Kevin & Maria Wedding</span>
         </div>
-    </footer>
+    </footer>*@
     <!-- END FOOTER -->
 
     <environment names="Development">

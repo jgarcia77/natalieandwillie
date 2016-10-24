@@ -53,6 +53,7 @@
         'M': 'minutes',
         'S': 'seconds'
     };
+
     // Time string formatter 
     function strftime(offsetObject) {
         return function(format) {
