@@ -88,6 +88,10 @@ p.wedding-party-name {
       font-size: 40pt;
   }
 
+      h1.welcome_message {
+        font-size: 20px;
+    }
+
   .wedate {
         margin-top: -140px;
     }
@@ -115,6 +119,10 @@ p.wedding-party-name {
   .names span {
       font-size: 70pt;
   }
+
+    h1.welcome_message {
+        font-size: 35px;
+    }
 
   #bridesmaid-images {
         margin-left: 55px;
