@@ -1,9 +1,16 @@
-﻿@font-face { font-family: BickhamScriptPro; src: url('../inc/fonts/BickhamScriptPro-Regular.otf'); }
+﻿@font-face { font-family: AdeliciaScript; src: url('../inc/fonts/Adelicia Script Clean.otf'); }
 @font-face { font-family: EngraversGothic; src: url('../inc/fonts/EngraversGothicBT.ttf')}
 
 .names {
-    font-family: BickhamScriptPro !important;
+    font-family: AdeliciaScript !important;
     font-size: 150px;
+    height: auto;
+}
+
+.names span {
+    color: #8a8a8a;
+    padding-right: 25px;
+    font-size: 80pt;
 }
 
 .wedate {
@@ -23,21 +30,24 @@
 h1.welcome_message {
     font-family: EngraversGothic !important;
     font-size: 40px;
+    color: #8a8a8a;
 }
 
 h1 {
-    font-family: BickhamScriptPro !important;
+    font-family: AdeliciaScript !important;
     text-transform: lowercase;
     font-size: 100px;
+    color: #012c45;
 }
 
 h2 {
     font-family: EngraversGothic !important;
     font-size: 25px;
+    color: #012c45;
 }
 
 h3 {
-    font-family: BickhamScriptPro !important;
+    font-family: AdeliciaScript !important;
     font-size: 30px;
     margin-top: -14px;
 }
@@ -54,6 +64,7 @@ p.ceremony_message {
 p.ceremony_address {
     font-weight: bold;
     font-size: 20px;
+    margin-top: 0px;
 }
 
 #bridesmaid-images {
@@ -65,6 +76,7 @@ p.ceremony_address {
 
 p.wedding-party-name {
     font-size: 23px;
+    color: #012c45;
 }
 
 @media (max-width: 376px) {
@@ -149,4 +161,60 @@ body, .main-images {
 a {
     color: navy;
     text-decoration: underline;
+}
+
+nav {
+    background-color: #012c45;
+    background: #012c45;
+    border-bottom: 1px solid #012c45;
+}
+
+.main-nav li a {
+    font-family: EngraversGothic;
+    color: #fff;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.main-nav li a:hover {
+    color: #8a8a8a;
+}
+
+.main-nav li.sep {
+    background: none;
+}
+
+.countdown div {
+    background: #012c45;
+}
+
+hr {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #012c45;
+    margin-top: -15px;
+    background: none;
+    height: 0px;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+    background: #012c45;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #8a8a8a;
+}
+
+#ceremony h2 {
+    margin-top: 5px;
+}
+
+p a, p a:visited {
+    color: #012c45;
+}
+
+p a:hover {
+    color: #8a8a8a;
+    text-decoration: none;
 }
