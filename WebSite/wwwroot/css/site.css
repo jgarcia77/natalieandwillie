@@ -33,6 +33,10 @@ h1.welcome_message {
     color: #8a8a8a;
 }
 
+.round-img {
+    border: 10px solid #8a8a8a;
+}
+
 h1 {
     font-family: AdeliciaScript !important;
     text-transform: lowercase;
@@ -164,6 +168,7 @@ p.wedding-party-name {
 
 body, .main-images {
     background: none !important;
+    background-color: #fbf9f4 !important;
 }
 #ceremony img:hover {
 	border-radius: 0% !important;
@@ -213,7 +218,7 @@ nav {
 
 .main-nav li a {
     font-family: EngraversGothic;
-    color: #fff;
+    color: #fbf9f4;
     text-shadow: none;
     text-decoration: none;
 }
@@ -229,6 +234,10 @@ nav {
 .countdown div,
 .countdown-mobile div  {
     background: #012c45;
+}
+
+.countdown-white, .countdown-white div p {
+    color: #fbf9f4;
 }
 
 hr {
