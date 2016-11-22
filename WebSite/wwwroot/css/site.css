@@ -113,6 +113,22 @@ p.wedding-party-name {
   #groomsmen-images {
     margin-left: auto;
     }
+
+  p.wedding-party-name {
+	margin-top: -15px;
+	
+    }
+
+    #bridesmaid-images h3 {
+	    margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    #groomsmen-images h3 {
+	margin-top: -20px;
+    margin-bottom: 20px;
+    }
+
 }
 
 @media (min-width: 667px) {
