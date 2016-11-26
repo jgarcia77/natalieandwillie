@@ -1,6 +1,16 @@
 ﻿@font-face { font-family: AdeliciaScript; src: url('../inc/fonts/Adelicia Script Clean.otf'); }
 @font-face { font-family: EngraversGothic; src: url('../inc/fonts/EngraversGothicBT.ttf')}
 
+@media (max-width: 939px) {
+    nav {
+        position: fixed !important;
+    }
+
+    #welcome {
+        margin-top: 55px;
+    }
+}
+
 .names {
     font-family: AdeliciaScript !important;
     font-size: 150px;

@@ -1,4 +1,5 @@
-﻿<!-- BEGIN CONTENT -->
+﻿@using WebSite.Models
+<!-- BEGIN CONTENT -->
 <!-- Our Story -->
 <section id="our-story">
     <h1>
@@ -74,7 +75,9 @@
     </div>
 
     <!-- Google Map -->
-    <div id="map-canvas" class="m-12"></div>
+    <a href="@Helper.GoogleDirectionsUrl" target="_blank">
+        <div id="map-canvas" class="m-12"></div>
+    </a>
 
 </section>
 
