@@ -9,6 +9,32 @@
     #welcome {
         margin-top: 55px;
     }
+
+    .soc .soc-md {
+        display: none;
+    }
+
+    .soc .soc-xs {
+        display: normal;
+    }
+}
+
+@media (min-width: 940px) {
+    nav {
+        position: fixed !important;
+    }
+
+    #welcome {
+        margin-top: 55px;
+    }
+
+    .soc .soc-md {
+        display: normal;
+    }
+
+    .soc .soc-xs {
+        display: none;
+    }
 }
 
 .names {
@@ -295,4 +321,19 @@ p a, p a:visited {
 p a:hover {
     color: #8a8a8a;
     text-decoration: none;
+}
+
+.soc a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 4px 6px;
+    text-align: center;
+    border-radius: 50%;
+    background: #b0b0b0;
+    color: #fff;
+}
+
+.soc i {
+    margin-top: 8px;
 }
