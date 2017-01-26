@@ -1,10 +1,12 @@
 ﻿@font-face { font-family: AdeliciaScript; src: url('../inc/fonts/Adelicia Script Clean.otf'); }
 @font-face { font-family: EngraversGothic; src: url('../inc/fonts/EngraversGothicBT.ttf')}
 
+#wedding-party{
+    margin-top: 265px;
+}
+
 #wedding-party .avatar {
 	text-align: center;
-	width: 125px;
-	height: 125px;
 	border-radius: 50%;
 	box-shadow: 0px 3px 8px 0px #cdcdcd;
 	margin: 0 auto 15px auto;
@@ -31,6 +33,17 @@
 }
 
 @media (min-width: 940px) {
+
+    #wedding-party .avatar {
+	text-align: center;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	box-shadow: 0px 3px 8px 0px #cdcdcd;
+	margin: 0 auto 15px auto;
+}
+
+
     nav {
         position: fixed !important;
     }
@@ -128,11 +141,11 @@ p.ceremony_address {
 }
 
 p.wedding-party-name {
-    font-size: 23px;
+    font-size: 22px;
     color: #012c45;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 414px) {
   .names {
         font-size: 55pt;
     }
@@ -180,6 +193,8 @@ p.wedding-party-name {
 
 }
 
+
+
 @media (min-width: 667px) {
   .names {
         font-size: 85pt;
@@ -194,22 +209,32 @@ p.wedding-party-name {
     }
 
   #bridesmaid-images {
-        margin-left: 55px;
+        margin-left: 105px;
     }
   #groomsmen-images {
-        margin-left: 55px;
+        margin-left: 105px;
     }
     h3 {
       font-size: 26px;
     }
 }
 
-@media (min-width: 768px) {
-  #bridesmaid-images {
-        margin-left: 115px;
+@media (min-width: 736px) {
+    #bridesmaid-images {
+        margin-left: 116px;
     }
   #groomsmen-images {
-        margin-left: 115px;
+        margin-left: 116px;
+    }
+}
+
+
+@media (min-width: 768px) {
+  #bridesmaid-images {
+        margin-left: 120px;
+    }
+  #groomsmen-images {
+        margin-left: 120px;
     }
 
   #wedding-party .avatar {
